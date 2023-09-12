@@ -11,7 +11,6 @@ const clearInput = () =>{
 };
 const getInput = (e) => {
   setInputs([...inputs, e.target.value]); //...inputs grabs the prev values
-  //console.log(inputs);
 };
 
 const evalu = () =>{
