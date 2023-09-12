@@ -1,0 +1,51 @@
+.Button-Wrapper { 
+    padding: 5px;
+    margin: 5px; 
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* Equal-width columns */
+    grid-column-gap: 5px;
+    grid-row-gap: 0;
+    justify-content: center; /* Center items horizontally */    
+}
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+}
+
+button{
+    background-color: #484848;
+    padding: 5px;
+    margin: 5px;
+    border:none;
+    color:white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover{
+    background-color: orange;
+}
+
+.results{
+    grid-column: span 4; /* Span all four columns */
+    align-self: end; /* Align this element to the end (bottom) of its row */
+}
+
+
+.display{
+    display: grid;
+    align-items: center; /* Center the content horizontally */
+    align-items: center; /* Center the input elements horizontally within the display container */
+    pointer-events: none;
+}
+
+input{
+    border:none;
+    margin:0;
+    padding:0;
+    background-color: #484848;
+    color:white;
+}
